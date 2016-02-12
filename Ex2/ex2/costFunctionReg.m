@@ -22,7 +22,7 @@ J=J+(lambda/2)*(theta' * theta -theta(1,1)^2);
 J=J/m;
 thetatemp=theta;
 thetatemp(1)=0;
-grad = X'*(sigmoid(X*theta)-y)*(1/m)+thetatemp*(lambda/m);
+grad = X'*(y-sigmoid(X*theta))*(1/m)+thetatemp*(lambda/m);
 
 
     
